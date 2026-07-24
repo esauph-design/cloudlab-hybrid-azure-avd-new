@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+
+**/.terraform.lock.hcl
+=======
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+>>>>>>> be1523943333c930ad849e8f4c451c1dd6fb626d

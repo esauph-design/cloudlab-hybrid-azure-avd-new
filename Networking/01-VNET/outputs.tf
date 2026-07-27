@@ -17,7 +17,9 @@ output "servers_subnet_id" {
 output "avd_subnet_id" {
   value = azurerm_subnet.avd.id
 }
-
+output "private_endpoints_subnet_id" {
+  value = azurerm_subnet.snet-private-endpoints.id
+}
 output "resource_group_name" {
   value = azurerm_resource_group.network.name
 }

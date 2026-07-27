@@ -50,3 +50,14 @@ resource "azurerm_subnet" "avd" {
   ]
 
 }
+resource "azurerm_subnet" "snet-private-endpoints" {
+
+  name                 = "snet-private-endpoints"
+  resource_group_name  = azurerm_resource_group.network.name
+  virtual_network_name = azurerm_virtual_network.cloudlab.name
+
+  address_prefixes = [
+    "10.10.4.0/24"
+  ]
+
+}
